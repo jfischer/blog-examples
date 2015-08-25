@@ -1,14 +1,12 @@
 Stamps Problem
 ==============
-This was a math problem that my third-grade son was given in his math homework:
-
-    Figure out the stamps needed to exactly match a certain number of cents.
-    The original problem:
+This was a math problem that my third-grade son was given in his math homework. The goal was to figure out the stamps needed to exactly match a certain number of cents. The original problem:
     
-        Tim had to mail the following packages:
-        a) package 1 cost 42 cents
-        b) package 2 cost 76 cents
-        c) package 3 cost 94 cents
+    Tim had to mail the following packages:
+    
+    a) package 1 cost 42 cents
+    b) package 2 cost 76 cents
+    c) package 3 cost 94 cents
 
     He had enough 10 cent, 22 cent, and 50 cent stamps to make up the correct
     amount for each package. What was the least number of stamps he needed to
