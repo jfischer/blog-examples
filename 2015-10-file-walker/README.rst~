@@ -1,0 +1,19 @@
+==========================
+File Walker
+=========================
+
+This is a simple test program implemented in multiple languages.
+
+WORK IN PROGRESS...
+
+
+Test Cases
+==========
+To test the program, the directory tree should have the following
+files/directories:
+
+1. Multiple sub-directories with files
+2. Softlinks to files (counted as files)
+3. Softlinks to directories (counted as files, should not follow the link)
+4. Directories with no access (counted as errors)
+5. Files with bad unicode characters (should be counted as errors, but aren't!)
