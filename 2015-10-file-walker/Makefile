@@ -2,10 +2,12 @@ SHELL=/bin/bash
 
 ROOT_PATH=$(shell cd ~; pwd)
 
+OCAML_FILEUTILS_LIBDIR=$(shell ocamlfind query fileutils)
+
 all: ml_walker go_walker JavaWalker.class
 
 ml_walker: ml_walker.ml
-	ocamlopt -o ml_walker unix.cmxa ml_walker.ml
+	ocamlopt -o ml_walker -I $(OCAML_FILEUTILS_LIBDIR) unix.cmxa fileutils-str.cmxa fileutils.cmxa ml_walker.ml
 
 go_walker: go_walker.go
 	go build go_walker.go
