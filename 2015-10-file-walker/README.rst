@@ -1,6 +1,6 @@
-==========================
+===========
 File Walker
-=========================
+===========
 
 This is a collection of simple test programs which walk a filesystem hierarchy.
 The same specification is implemented in multiple languages (currently Go,
@@ -11,6 +11,23 @@ language properties of interest:
 * Iteration (loops, recursion, generators)
 * Error handling
 * POSIX interfaces (in this case, the filesystem)
+
+Building
+========
+This has only been tested on Ubuntu.
+
+Prerequisites
+-------------
+To compile everything, you will need to install the Java 7 JDK, the Go compiler,
+and the OCaml compiler.
+
+The OCaml version of the walker will also need the ocaml-findlib package and the
+OCaml fileutils library available at
+https://forge.ocamlcore.org/projects/ocaml-fileutils/. Follow the instructions
+in the INSTALL.txt file to build and install it. I tested with version 0.5.0.
+
+When all the dependencies have been installed, you can run `make all` to compile
+the code. To test run everything against your home directory, run `make test`.
 
 
 Specification

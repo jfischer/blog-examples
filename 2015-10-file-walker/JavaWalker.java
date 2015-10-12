@@ -103,16 +103,17 @@ public class JavaWalker {
         if (args.length==2) {
             repeat_count = Integer.parseInt(args[1]);
         }
+        Results results = null;
         for (int i = 1; i <= repeat_count; i++) {
             System.out.println("Iteration " + String.valueOf(i) + "...");
             try {
-		Results results = walk(path, new Callbacks());
-		System.out.println("Completed walk, found " + 
-				   results.toString());
+		results = walk(path, new Callbacks());
 	    } catch (InvalidDirectory e) {
 		e.printStackTrace();
 		System.exit(1);
 	    }
 	}
+        System.out.println("Completed walk(s), found " + 
+                           results.toString());
     }
 }
