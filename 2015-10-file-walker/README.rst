@@ -71,6 +71,9 @@ be a relative path, which should be converted to an absolute path before passing
 it to the walker function. The walker is called the specified number of iterations
 and then the results for the last interation are printed.
 
+The main program must pass a set of callbaks to the walker function. We will just
+pass in a set of callbacks that do nothing.
+
 Errors
 ------
 If the root path is not a directory, inaccessible, or an error occurs obtaining
